@@ -5,7 +5,7 @@ node {
   stage('checkout') {
     checkout scm
   }
-  stage('build') {
-    bat label: 'Compile & Assemble', script: 'mvn clean package'
+  stage('project-jenkinsfile') {
+    load 'Jenkinsfile'
   }
 }
