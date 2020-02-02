@@ -3,6 +3,6 @@ node {
     echo 'Hello World'
   }
   stage('build') {
-    sh label: 'Compile & Assemble', script: 'mvn clean package'
+    bat label: 'Compile & Assemble', script: 'mvn clean package'
   }
 }
